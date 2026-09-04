@@ -138,6 +138,9 @@ if ($result->isHuman()) {
 пользователь пропускается как человек (рекомендация Yandex — не блокировать форму из-за сбоя
 сервиса). На штатный ответ `"failed"` это не влияет — там всегда «робот».
 
+URL серверной проверки (/validate): https://smartcaptcha.yandexcloud.net/validate
+URL JS-скрипта капчи: https://smartcaptcha.cloud.yandex.ru/captcha.js
+
 ## Сборка фронтенда
 
 В репозитории уже лежит собранный `assets/dist/js/yandex-smart-captcha.js`. При правке
