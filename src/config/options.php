@@ -10,7 +10,7 @@ return [
 
     'ysc_client_key' => [
         'path'         => 'modules.YandexSmartCaptcha.params.clientKey',
-        'label'        => '[SmartCaptcha] Клиентский ключ (sitekey, ysc1_)',
+        'label'        => 'Клиентский ключ (sitekey, ysc1_)',
         'description'  => "Публичный ключ для виджета. Yii::\$app->getModule('YandexSmartCaptcha')->params['clientKey']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['string']],
@@ -19,7 +19,7 @@ return [
 
     'ysc_server_key' => [
         'path'         => 'modules.YandexSmartCaptcha.params.serverKey',
-        'label'        => '[SmartCaptcha] Серверный ключ (secret, ysc2_)',
+        'label'        => 'Серверный ключ (secret, ysc2_)',
         'description'  => "Приватный ключ для проверки токена. Yii::\$app->getModule('YandexSmartCaptcha')->params['serverKey']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['string']],
@@ -28,7 +28,7 @@ return [
 
     'ysc_default_language' => [
         'path'         => 'modules.YandexSmartCaptcha.params.defaultLanguage',
-        'label'        => '[SmartCaptcha] Язык виджета по умолчанию',
+        'label'        => 'Язык виджета по умолчанию',
         'description'  => "hl виджета. Yii::\$app->getModule('YandexSmartCaptcha')->params['defaultLanguage']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['in', 'range' => ['ru', 'en', 'be', 'kk', 'tt', 'uk', 'uz', 'tr']]],
@@ -49,7 +49,7 @@ return [
 
     'ysc_verify_url' => [
         'path'         => 'modules.YandexSmartCaptcha.params.verifyUrl',
-        'label'        => '[SmartCaptcha] URL серверной проверки (/validate)',
+        'label'        => 'URL серверной проверки (/validate)',
         'description'  => "Endpoint проверки токена. Yii::\$app->getModule('YandexSmartCaptcha')->params['verifyUrl']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['url']],
@@ -58,7 +58,7 @@ return [
 
     'ysc_js_url' => [
         'path'         => 'modules.YandexSmartCaptcha.params.jsUrl',
-        'label'        => '[SmartCaptcha] URL JS-скрипта капчи',
+        'label'        => 'URL JS-скрипта капчи',
         'description'  => "captcha.js виджета. Yii::\$app->getModule('YandexSmartCaptcha')->params['jsUrl']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['url']],
@@ -67,7 +67,7 @@ return [
 
     'ysc_timeout' => [
         'path'         => 'modules.YandexSmartCaptcha.params.timeout',
-        'label'        => '[SmartCaptcha] Таймаут запроса к /validate, сек',
+        'label'        => 'Таймаут запроса к /validate, сек',
         'description'  => "Yii::\$app->getModule('YandexSmartCaptcha')->params['timeout']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['number', 'min' => 0]],
@@ -76,7 +76,7 @@ return [
 
     'ysc_fail_open' => [
         'path'         => 'modules.YandexSmartCaptcha.params.failOpen',
-        'label'        => '[SmartCaptcha] Fail-open при сбое сервиса',
+        'label'        => 'Fail-open при сбое сервиса',
         'description'  => "Пропускать пользователя при транспортной/HTTP-ошибке /validate. Yii::\$app->getModule('YandexSmartCaptcha')->params['failOpen']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['boolean']],
@@ -85,7 +85,7 @@ return [
 
     'ysc_send_ip' => [
         'path'         => 'modules.YandexSmartCaptcha.params.sendIp',
-        'label'        => '[SmartCaptcha] Передавать IP пользователя в /validate',
+        'label'        => 'Передавать IP пользователя в /validate',
         'description'  => "Yii::\$app->getModule('YandexSmartCaptcha')->params['sendIp']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['boolean']],
@@ -94,7 +94,7 @@ return [
 
     'ysc_test_mode' => [
         'path'         => 'modules.YandexSmartCaptcha.params.testMode',
-        'label'        => '[SmartCaptcha] Тестовый режим виджета (test)',
+        'label'        => 'Тестовый режим виджета (test)',
         'description'  => "Всегда показывать задание — только для отладки. Yii::\$app->getModule('YandexSmartCaptcha')->params['testMode']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['boolean']],
@@ -103,7 +103,7 @@ return [
 
     'ysc_expected_host' => [
         'path'         => 'modules.YandexSmartCaptcha.params.expectedHost',
-        'label'        => '[SmartCaptcha] Ожидаемый host (доп. сверка ответа)',
+        'label'        => 'Ожидаемый host (доп. сверка ответа)',
         'description'  => "Если задан — верификатор сверяет host из ответа /validate. Yii::\$app->getModule('YandexSmartCaptcha')->params['expectedHost']",
         'category'     => 'YandexSmartCaptcha',
         'rules'        => [['string']],
